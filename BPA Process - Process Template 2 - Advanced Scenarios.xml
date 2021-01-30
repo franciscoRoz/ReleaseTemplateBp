@@ -5928,7 +5928,7 @@ The attempts count for the item is reset to zero.</narrative>
     <displaywidth>90</displaywidth>
     <displayheight>60</displayheight>
     <font family="Tahoma" size="10" style="Bold" color="FF0000" />
-    <decision expression="[Stop ASAP] OR [Stop After Items]=0 OR LocalTime()&gt;[Stop After Time]" />
+    <decision expression="[Stop ASAP] OR [Stop After Items]=0 OR LocalTime()&gt;[Stop After Time] OR IsStopRequested()" />
     <ontrue>66b06bc7-f779-4e6f-afc6-f766d1fdd090</ontrue>
     <onfalse>f86cd00e-4802-4af3-8927-97953355e822</onfalse>
   </stage>
